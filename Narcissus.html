@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>水仙花數</title>
+        
+        <!--B. 水仙花數 = 三位數各數字的立方和等於該數(例如:153)，-->
+        <!--請寫程式列出所有的水仙花數。-->
+        
+    </head>
+    
+    <body>
+        <div>B. 水仙花數 = 三位數各數字的立方和等於該數(例如：153)<br></br>
+        所有的水仙花數：<br></br></div>
+        
+        <div id="text"></div>
+        
+        <script>
+            var temp1;
+            var temp2;
+        
+            for(var a=1; a<10; a++){
+                for(var b=0; b<10; b++){
+                    for(var c=0; c<10; c++){
+                        temp1 = a*a*a + b*b*b + c*c*c;
+                        temp2 = 100*a + 10*b + c;
+                        
+                        if(temp1 == temp2){
+                            
+                            document.getElementById("text").innerHTML += temp1 + "<br></br>";
+                            
+                        }else{
+                            
+                        }
+                    }
+                }
+            }
+            
+        
+            
+        </script>
+        
+    </body>
+</html>
